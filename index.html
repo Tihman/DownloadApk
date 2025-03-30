@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мобильный сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Электронный рецепт</h1>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+
+    <section id="main">
+        
+          <p>Перейдите на новую удобную систему рецептурных бланков вместе с нами!</p>  
+        
+
+
+          <button onclick="downloadApp()">Скачать официальное мобильное приложение</button>  
+
+        <div class="info-blocks">
+            <div class="info-item">
+                <p>Карта с ближайшими аптеками и наличием лекарств</p>
+            </div>
+            <div class="info-item">
+                <p>Данные защищены</p>
+            </div>
+            <div class="info-item">
+                <p>Удобство и простота</p>
+            </div>
+        </div>
+    </section>
+
+    <nav id="menu" class="hidden">
+        <div class="close-menu" onclick="toggleMenu()">&#10006;</div>
+        <ul>
+            <li><a href="#map">Карта с ближайшими аптеками и наличием лекарств</a></li>
+            <li><a href="#data">Данные защищены</a></li>
+            <li><a href="#convenience">Удобство и простота</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>footer</p>
+        <div class="logo">ЛОГО</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
